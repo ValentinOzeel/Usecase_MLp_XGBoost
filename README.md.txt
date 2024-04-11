@@ -1,1 +1,1 @@
-Demonstration of MLp use case with the Spaceship dataset using XGBoost for binary classification.
+Demonstration of MLp use case with the Spaceship dataset using XGBoost for binary classification (spaceship tabular dataset).
