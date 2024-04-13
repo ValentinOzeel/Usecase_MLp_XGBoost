@@ -1,0 +1,23 @@
+DATA_ACCESS:
+  train_path: "data/train.csv"
+  to_predict_path: "data/valid.csv"
+  target: Transported
+
+DATA_PREPROCESSING:
+  path: "src/data_preprocess_steps.py"
+  preprocessing: preprocessing_steps
+  sampling: sampling_steps
+
+MODEL:
+  path: "src/model.py"
+  model: xgb_model
+
+MLP_CONFIG:
+  RANDOM_STATE: 0
+  SKLEARN_CPU: True
+  SKLEARN_CPU_INTELEX_ACCEL: False
+  SKLEARN_GPU_RAPIDS: False
+  PANDAS_GPU: False
+
+MLFLOW_CONFIG:
+  TRACKING_URI: http://127.0.0.1:5000
